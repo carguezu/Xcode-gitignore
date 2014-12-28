@@ -210,3 +210,7 @@ Pods
 #
 #*.xccheckout
 *.xccheckout
+
+# Carthage - https://github.com/Carthage/Carthage
+Carthage.pkg
+Carthage/Build
