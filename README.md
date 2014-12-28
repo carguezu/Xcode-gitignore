@@ -1,4 +1,4 @@
-Xcode5-gitignore
+Xcode 5 ~ 6 - gitignore
 ================
 
-gitignore file for XCode 5
+gitignore file for Xcode 5 or Xcode 6
