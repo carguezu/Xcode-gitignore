@@ -5,10 +5,11 @@
 #
 #    15564624 - what does the xccheckout file in Xcode5 do? Where's the documentation?
 #
-# Version 2.4
+# Version 2.5
 # For latest version, see: http://stackoverflow.com/questions/49478/git-ignore-file-for-xcode-projects
 #
 # 2015 updates:
+# - Fixed the .idea optional ignore. Thanks to @hashier for pointing this out
 # - Finally added "xccheckout" to the ignore. Apple still refuses to answer support requests about this, but in practice it seems you should ignore it.
 # - minor tweaks from Jona and Coeur (slightly more precise xc* filtering/names)
 # 2014 updates:
@@ -125,7 +126,7 @@ build/
 #     - unless they are "shared")
 #
 # NB: this is exclusive with OPTION 2 below
-xcuserdata
+xcuserdata/
  
 # OPTION 2: ---------------------------------
 #     get rid of ALL personal settings, but KEEP SOME OF THEM
@@ -156,7 +157,7 @@ xcuserdata
 #       /xcuserdata/
 #         /(your name)/xcuserdatad/
 #           UserInterfaceState.xcuserstate
-#     /xcsshareddata/
+#     /xcshareddata/
 #       /xcschemes/
 #         (shared scheme name).xcscheme
 #     /xcuserdata/
@@ -197,8 +198,8 @@ Pods
 #
 # # AppCode specific files
 #
-.idea
-*.iml
+# c.f. https://www.jetbrains.com/objc/help/managing-projects-under-version-control.html?search=workspace.xml
+.idea/workspace.xml
 #
 # TEXTMATE:
 #
